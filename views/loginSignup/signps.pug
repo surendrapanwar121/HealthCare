@@ -1,0 +1,24 @@
+extends ../layout
+
+block style
+    link(rel="stylesheet", href="/stylesheets/loginSignup/login.css")
+
+block content
+    .container 
+        h1 SignUp As Patient
+        form(action="/users/loginSignup/ps", method="post") 
+            input(type="text" ,name="firstname" ,placeholder="Enter Firstname",required)
+            input(type="text" ,name="lastname" ,placeholder="Enter Lastame",required )
+            input(type="text" ,name="address" ,placeholder="Enter Address",required )
+            input(type="text" ,name="number" ,placeholder="Enter Number",required )
+            input(type="email" ,name="email" ,placeholder="Enter Email",required )
+            input(type="text" ,name="age" ,placeholder="Enter Age",required )
+            input(type="text",name="username",placeholder="Enter username",required)
+            input(type="password",name="password",placeholder="Enter password",required)
+            button.btn 
+                |SignUp
+            
+
+
+
+
